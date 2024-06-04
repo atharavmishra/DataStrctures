@@ -119,18 +119,17 @@ public class LinkedList {
 
     }
 
-    public Node reverseLinkedList() {
-        if (length == 0) return null;
-        if (length == 1) return head;
+    public void reverseLinkedList() {
+        if (length == 0) return;
+        if (length == 1) return;
         Node temp = head;
         head = tail;
         tail = temp;
 
-        for(int i=0; i<=length;i++){
+        for (int i = 0; i <= length; i++) {
 
         }
 
-        return head;
     }
 
 
