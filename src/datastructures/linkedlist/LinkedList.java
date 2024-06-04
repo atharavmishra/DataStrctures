@@ -126,6 +126,10 @@ public class LinkedList {
         head = tail;
         tail = temp;
 
+        for(int i=0; i<=length;i++){
+
+        }
+
         return head;
     }
 
