@@ -119,26 +119,26 @@ public class LinkedList {
 
     }
 
-    public void reverseLinkedList() {
-        if (length == 0) return;
-        if (length == 1) return;
+    public void reverse() {
         Node temp = head;
         head = tail;
         tail = temp;
-
-        for (int i = 0; i <= length; i++) {
-
+        Node after = temp.next;
+        Node before = null;
+        for (int i = 0; i < length; i++) {
+            after = temp.next;
+            temp.next = before;
+            before = temp;
+            temp = after;
         }
-
     }
-
 
     public Node removeNode(int index) {
         if (index < 0 || index > length) return null;
         Node before = head;
         Node after = head;
 
-        for (int i = 0; i < index - 1; i++) {
+        for (int i = 0; i < index-1; i++) {
             before = after;
             after = after.next;
 

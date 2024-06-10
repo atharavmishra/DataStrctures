@@ -25,33 +25,34 @@ public class Main {
         myLinkedList.append(5);
 
 
-        System.out.println("\n\nAfter prepend():");
-        System.out.println("----------------");
-        myLinkedList.getHead();
-        myLinkedList.getTail();
-        myLinkedList.getLength();
-
-        LinkedList.Node getNode = myLinkedList.getNode(2);
+//        System.out.println("\n\nAfter prepend():");
+//        System.out.println("----------------");
+//        myLinkedList.getHead();
+//        myLinkedList.getTail();
+//        myLinkedList.getLength();
 //
-//        System.out.println("Node value is: " + getNode.value);
-//        if (myLinkedList.insertNode(2, 2)) {
-//            System.out.println("Node Inserted Successfully");
-//        }
-//        if (myLinkedList.setNode(3, 3)) {
-//            System.out.println("Node Set Successfully");
-//        }
-
+//        LinkedList.Node getNode = myLinkedList.getNode(2);
+////
+////        System.out.println("Node value is: " + getNode.value);
+////        if (myLinkedList.insertNode(2, 2)) {
+////            System.out.println("Node Inserted Successfully");
+////        }
+////        if (myLinkedList.setNode(3, 3)) {
+////            System.out.println("Node Set Successfully");
+////        }
+//
         System.out.println("\nLinked List:");
         myLinkedList.printList();
-
+//
         System.out.println("Node Removed: " + myLinkedList.removeNode(5).value);
         myLinkedList.getLength();
-        myLinkedList.reverseLinkedList();
+//        myLinkedList.reverseLinkedList();
 
         System.out.println("\nLinked List:");
         myLinkedList.printList();
-
-        System.out.println("division:-" + 5 / 2);
+        myLinkedList.reverse();
+        System.out.println("\nLinked List:");
+        myLinkedList.printList();
 
         /*
             EXPECTED OUTPUT:
