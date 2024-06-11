@@ -125,7 +125,7 @@ public class LinkedList {
         tail = temp;
         Node after = temp.next;
         Node before = null;
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < length - 1; i++) {
             after = temp.next;
             temp.next = before;
             before = temp;
@@ -134,23 +134,23 @@ public class LinkedList {
     }
 
     public Node removeNode(int index) {
-        if (index < 0 || index > length) return null;
+        if (index < 0 || index - 1 > length) return null;
         Node before = head;
         Node after = head;
-
-        for (int i = 0; i < index-1; i++) {
+        if (index == 1) return removeFirst();
+        if (index == length - 1) return removeLast();
+        for (int i = 0; i < index - 1; i++) {
             before = after;
             after = after.next;
-
         }
-        before.next = after.next;
-        after.next = null;
+        after = after.next;
+        before.next = after;
         length--;
         if (length == 0) {
             head = null;
             tail = null;
         }
-        return after;
+        return head;
 
     }
 
