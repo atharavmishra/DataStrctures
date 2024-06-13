@@ -45,13 +45,14 @@ public class Main {
         myLinkedList.printList();
 //        myLinkedList.getLength();
 //
-        System.out.println("Node Removed: " + myLinkedList.removeNode(1).value);
-        myLinkedList.getLength();
-//        myLinkedList.reverseLinkedList();
+//        System.out.println("Node Removed: " + myLinkedList.removeNode(3).value);
+//        myLinkedList.getLength();
+////        myLinkedList.reverseLinkedList();
 
 //        System.out.println("\nLinked List:");
 //        myLinkedList.printList();
 //        myLinkedList.reverse();
+        myLinkedList.reverse();
         System.out.println("\nLinked List:");
         myLinkedList.printList();
 
