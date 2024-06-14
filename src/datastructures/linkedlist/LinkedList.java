@@ -50,6 +50,17 @@ public class LinkedList {
         System.out.println("Length: " + length);
     }
 
+    public Node findMiddleNode() {
+        Node slow = head;
+        Node fast = head;
+        while (fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+
+        }
+        return slow;
+    }
+
     public void append(int value) {
         Node newNode = new Node(value);
         if (length == 0) {

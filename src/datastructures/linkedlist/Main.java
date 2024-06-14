@@ -16,13 +16,11 @@ public class Main {
         myLinkedList.getTail();
         myLinkedList.getLength();
 
-        System.out.println("\nLinked List:");
-        myLinkedList.printList();
-
 //        myLinkedList.prepend(3);
         myLinkedList.append(3);
         myLinkedList.append(4);
         myLinkedList.append(5);
+        myLinkedList.append(6);
 
 
 //        System.out.println("\n\nAfter prepend():");
@@ -41,8 +39,7 @@ public class Main {
 ////            System.out.println("Node Set Successfully");
 ////        }
 //
-        System.out.println("\nLinked List:");
-        myLinkedList.printList();
+
 //        myLinkedList.getLength();
 //
 //        System.out.println("Node Removed: " + myLinkedList.removeNode(3).value);
@@ -52,9 +49,10 @@ public class Main {
 //        System.out.println("\nLinked List:");
 //        myLinkedList.printList();
 //        myLinkedList.reverse();
-        myLinkedList.reverse();
         System.out.println("\nLinked List:");
         myLinkedList.printList();
+        System.out.println("Middle Node is : "+myLinkedList.findMiddleNode().value);
+
 
         /*
             EXPECTED OUTPUT:
